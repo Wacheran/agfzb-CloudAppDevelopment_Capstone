@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: wacherasapp
     routes:
-      - route: $HOST.$DOMAIN
+      - route: wacherasapp.eu-gb.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: wacherasapp-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: wacherasapp.eu-gb.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
